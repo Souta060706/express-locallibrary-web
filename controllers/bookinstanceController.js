@@ -38,7 +38,7 @@ exports.bookinstance_create_get = asyncHandler(async (req, res, next) => {
   const allBooks = await Book.find({}, "title").sort({ title: 1 }).exec();
 
   res.render("bookinstance_form", {
-    title: "Create BookInstance",
+    title: "本のインスタンスを作成",
     book_list: allBooks,
   });
 });
