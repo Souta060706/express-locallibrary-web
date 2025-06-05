@@ -4,7 +4,7 @@ block content
 
   h1 #{title}: #{author.name}
   p= author.lifespan
-
+  
   if author_books.length
 
     p #[strong Delete the following books before attempting to delete this author.]
@@ -23,4 +23,4 @@ block content
       div.form-group
         input#authorid.form-control(type='hidden', name='authorid', value=author._id )
 
-      button.btn.btn-primary(type='submit') Delete
+      button.btn.btn-primary(type='submit') 削除
